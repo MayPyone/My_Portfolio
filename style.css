@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Poppins';
-  src: url(font_family/Poppins-Bold.ttf);
+  src: url(font_family/Poppins-Medium.ttf);
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 
 .menu_bar {
   margin-top: 44px;
-  width: 100%;
+  width: 375px;
   height: 48px;
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,6 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
-  display: flex;
 }
 
 .menu_icon {
@@ -35,17 +34,18 @@ body {
 
 .intro {
   height: 587.1460571289062px;
-  width: 462px;
+  width: 375px;
   background: url(images/headershapes.png);
   background-repeat: no-repeat;
-  background-size: 462px 587px;
+  background-size: 375px 587px;
   margin-top: 12px;
 }
 
 .headline {
+  display: flex;
+  align-items: center;
   padding-top: 102px;
   padding-left: 24px;
-  margin-right: 24px;
 }
 
 h2 {
