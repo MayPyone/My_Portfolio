@@ -25,7 +25,7 @@
 
 
 
-**Portofilio** is  my first project.
+**Portfolio** is  my first created portfolio project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
