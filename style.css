@@ -8,7 +8,7 @@ body {
   min-width: 375px;
 }
 
-.menu_bar {
+header {
   margin-top: 44px;
   width: 375px;
   height: 48px;
@@ -26,13 +26,14 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  text-decoration: none;
 }
 
 .menu_icon {
   padding: 3%;
 }
 
-.intro {
+section {
   height: 587.1460571289062px;
   width: 375px;
   background: url(images/headershapes.png);
@@ -46,9 +47,10 @@ body {
   align-items: center;
   padding-top: 102px;
   padding-left: 24px;
+  width: 327px;
 }
 
-h2 {
+h1 {
   color: #172b4d;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -80,8 +82,14 @@ p {
   margin-top: 12px;
   width: 170.17px;
   height: 20px;
+  margin-left: -2px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
 }
 
 .connect_menu img:hover {
