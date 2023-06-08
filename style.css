@@ -69,7 +69,7 @@ h1 {
   line-height: 16px;
   letter-spacing: 0 em;
   text-align: left;
-  color: #7a869a; 
+  color: #7a869a;
 }
 
 .canopy1 {
@@ -117,11 +117,11 @@ p {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
-  color:#396DF2;
+  color: #396df2;
   width: 126px;
   height: 48px;
-  background-color: #FFFFFF;
-  border-color: #396DF2;
+  background-color: hsl(0, 0%, 100%);
+  border-color: #396df2;
   border-radius: 8px;
   margin-bottom: 12px;
 }
