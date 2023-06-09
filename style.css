@@ -296,6 +296,13 @@ h1 {
   padding-bottom: 32px;
 }
 
+.intro_2 {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 144px;
+  border-top-right-radius: 17%;
+}
+
 .ability {
   width: 375px;
   background-color: #fff;
