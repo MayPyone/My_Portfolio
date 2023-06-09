@@ -71,11 +71,22 @@ header {
   padding: 4%;
 }
 
+p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  text-align: left;
+}
+
 .intro_one {
   padding-top: 50px;
   padding-left: 24px;
   padding-bottom: 120px;
   background: url(images/headershapes.png);
+  padding-right: 24px;
 }
 
 .logo {
@@ -168,26 +179,6 @@ h1 {
   color: #7a869a;
   float: left;
   padding-right: 32px;
-}
-
-p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #344563;
-}
-
-.intro_one p {
-  color: #344563;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  margin-top: 12px;
-  line-height: 24px;
-  padding-right: 24px;
 }
 
 .connect {
