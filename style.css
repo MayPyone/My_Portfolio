@@ -9,23 +9,23 @@
 }
 
 body {
-  margin-left: 40%;
   min-width: 375px;
   max-width: 775px;
   background-color: #e5e5e5;
+  margin: auto;
 }
 
 section {
-  width: 375px;
+  width: 100%;
   background-color: #f2f2f2;
 }
 
 header {
   margin-top: 44px;
-  width: 375px;
+  width: 100%;
   height: 48px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 .taskbar {
@@ -35,12 +35,24 @@ header {
   display: flex;
 }
 
+.logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: "normal";
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  text-decoration: none;
+}
+
 .inner1 {
   height: 587.1460571289062px;
   background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: 375px 587px;
   border-bottom-left-radius: 50px;
+  width: 100%;
 }
 
 .languages img {
@@ -68,7 +80,9 @@ header {
 }
 
 .menu_icon {
-  padding: 4%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 4%;
 }
 
 p {
@@ -85,21 +99,10 @@ p {
   padding-top: 50px;
   padding-left: 24px;
   padding-bottom: 120px;
-  background: url(images/headershapes.png);
+  background: url("images/headershapes.png");
   padding-right: 24px;
-}
-
-.logo {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 24px;
-  font-family: "Poppins", sans-serif;
-  font-style: "normal";
-  font-weight: 700px;
-  font-size: 18px;
-  line-height: 20px;
-  color: #6070ff;
-  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -112,13 +115,11 @@ h1 {
 }
 
 .grid_container {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: 100% 100% 100% 100%;
   padding-top: 114px;
-  width: 327px;
-  padding-left: 24px;
-  padding-right: 24px;
+  width: 100%;
   background-color: #f2f2f2;
+  align-items: center;
 }
 
 .grid_container h1 {
@@ -127,7 +128,6 @@ h1 {
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0 em;
-  text-align: left;
   margin-bottom: 10px;
 }
 
@@ -136,15 +136,18 @@ h1 {
   border-style: solid;
   border-color: #dfe1e6;
   border-radius: 16px;
-  width: 327px;
+  width: 92%;
+  padding-left: 1%;
   margin-bottom: 88px;
+  margin-left: 3%;
   background-color: #fff;
+  background-color: pink;
 }
 
 .information1 {
   padding: 16px;
   align-items: center;
-  width: 295px;
+  width: 95%;
 }
 
 .language {
@@ -191,15 +194,15 @@ h1 {
 }
 
 .framework img {
-  margin-right: 2em;
+  margin-right: 12.9%;
 }
 
 .tech_language img {
-  margin-right: 2em;
+  margin-right: 12.9%;
 }
 
 .skill img {
-  margin-left: 10em;
+  margin-right: 12.9%;
 }
 
 .connect_menu {
@@ -236,6 +239,10 @@ h1 {
 .connect_menu img:hover {
   transform: translateY(-10%);
   color: purple;
+}
+
+form button {
+  margin-top: 7%;
 }
 
 .resume button {
@@ -281,7 +288,7 @@ h1 {
 }
 
 .aboutme header {
-  width: 375px;
+  width: 100%;
   padding-top: 114px;
   background-color: #fff;
   border-top-right-radius: 15%;
@@ -289,7 +296,7 @@ h1 {
 }
 
 .headline {
-  width: 327px;
+  width: 94%;
   margin-left: 24px;
   margin-right: 24px;
   background-color: #fff;
@@ -304,7 +311,7 @@ h1 {
 }
 
 .ability {
-  width: 375px;
+  width: 100%;
   background-color: #fff;
 }
 
@@ -350,12 +357,13 @@ h1 {
 
 .skill {
   margin-top: 24px;
+  background-color: green;
 }
 
 .languages ul {
   display: flex;
   justify-content: center;
-  margin-top: 24 px;
+  margin-top: 24px;
   margin-bottom: 36px;
 }
 
@@ -391,4 +399,67 @@ h1 {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+}
+
+.aboutme {
+  padding-bottom: 40%;
+  background-color: #fff;
+  background-color: pink;
+}
+
+.contactform button {
+  width: 30%;
+  height: 20%;
+}
+
+.contactform {
+  background-color: #fff;
+}
+
+.contactform article {
+  width: 100%;
+  padding-top: 103px;
+  padding-bottom: 50px;
+  border-top-left-radius: 10%;
+  background-image: url("images/contact\ form\ shapes-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-color: #6070ff;
+}
+
+.contactform h2 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.contactform p {
+  padding-right: 24px;
+  padding-left: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  margin-bottom: 13%;
+}
+
+form {
+  margin-bottom: 20%;
+  padding-right: 24px;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection {
+  padding: 3%;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
 }
