@@ -96,3 +96,20 @@ li {
   transform: translateY(-10%);
   color: purple;
 }
+.language{
+  align-items: center;
+  gap: 8px;
+}
+.language li{
+  margin-left: 1rem;
+  float: left;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070FF;
+  padding: 3%;
+  background-color: #EBEBFF;
+  border-radius: 8px;
+}
