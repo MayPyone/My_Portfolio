@@ -58,7 +58,7 @@
                     <ul>
                         <li><div class="canopy1">CANOPY</div></li>
                      
-                        <li> Full Stack Dev</li>
+                        <connect> Full Stack Dev</li>
                         
                         <li>2015</li>
                     </ul>
@@ -253,27 +253,29 @@
         </div>
    </section>
 <section class="contactform">
+    <div class="background">
     <article>
         <h2>
             Contact me
         </h2>
         <p>
             If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
-I’d love to help with it!
+<br>I’d love to help with it!
         </p>
-        <form>
-            <input type="text" class="collection" name="name" maxlength="30" placeholder="Enter your name"><br>
-            <input type="text" class="collection" name="email" placeholder="Enter your email" ><br>
-            <textarea rows="6" class="collection"  cols="50" placeholder="Write your message here..."></textarea>
-
-            <button type="button" class="collection">Get in touch</button>
+        <form
+        action="https://formspree.io/f/xbjenlov"
+        method="POST">
+            <ul>
+                <li><input type="text" class="collection" name="name" maxlength="30" placeholder="Enter your name" required></li>
+                 <li> <input type="text" class="collection" name="email" placeholder="Enter your email" required></li>
+                  <li> <textarea maxlength="500" id="msg" name="user_message"  placeholder="Write your message here..." required></textarea></li>
+                   <li><button type="submit" class="collection">Get in touch</button></li>         
+           </ul>
         </form>
+        <div class="homeimage"><img src="images/Shape.png"/></div>
     </article>
-
+    </div>
 </section>
-
-    
-   
     </section>
 </body>
 </html>
