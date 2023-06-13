@@ -277,6 +277,11 @@ form button {
   background-color: #fff;
 }
 
+.separator {
+  width: 80%;
+  margin-left: 4%;
+}
+
 .background button {
   margin-top: 0;
   font-family: 'Poppins', sans-serif;
@@ -455,6 +460,7 @@ form button {
   border-top-left-radius: 11%;
   padding-bottom: 1%;
 }
+
 /* contact section */
 .contactform article {
   width: 100%;
@@ -463,6 +469,7 @@ form button {
   background-position-x: right;
   padding-top: 20%;
 }
+
 .contactform h2 {
   display: flex;
   justify-content: center;
@@ -474,6 +481,7 @@ form button {
   color: #fff;
   margin: 0;
 }
+
 .contactform p {
   padding-right: 24px;
   padding-left: 24px;
@@ -482,10 +490,11 @@ form button {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #EBEBFF;
+  color: hsl(240, 100%, 96%);
   margin-bottom: 10%;
   text-align: center;
 }
+
 form {
   padding-right: 6%;
   padding-left: 6%;
@@ -493,9 +502,10 @@ form {
   flex-direction: column;
   padding-bottom: 5%;
 }
+
 .collection {
   padding: 3%;
-  border: 1px solid #CFD8DC;
+  border: 1px solid hsl(198, 16%, 84%);
   border-radius: 8px;
   font-family: 'Poppins-light', sans-serif;
   font-style: normal;
@@ -503,16 +513,23 @@ form {
   font-size: 17px;
   line-height: 20px;
 }
+
 input {
   width: 95%;
+  font-family: 'Poppins-bold', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #172b4d;
   outline: none;
 }
+
 textarea {
   padding-top: 6%;
   padding-left: 4%;
   padding-bottom: 40%;
   width: 96%;
-  border: 1px solid #CFD8DC;
+  border: 1px solid hsl(198, 16%, 84%);
   margin-bottom: 0;
   font-family: 'Poppins-light', sans-serif;
   font-style: normal;
@@ -521,7 +538,9 @@ textarea {
   line-height: 24px;
   border-radius: 8px;
   outline: none;
+  color: #b3bac5;
 }
+
 .homeimage {
   display: flex;
   padding: 0;
