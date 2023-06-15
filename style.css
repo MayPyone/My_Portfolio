@@ -423,13 +423,13 @@ h4 {
   border: 1px solid #6070ff;
 }
 
-.project_tag button:hover {
+button:hover {
   transform: translateY(-10%);
   background-color: #6070ff;
   color: #fff;
 }
 
-.project_tag button:active {
+button:active {
   background-color: #2230d2;
 }
 
@@ -556,11 +556,7 @@ textarea {
   }
 
   .grid_container {
-    grid-template-rows: 100% 100% 100% 100%;
-    padding-top: 114px;
-    width: 100%;
-    background-color: #f2f2f2;
-    align-items: center;
+    display: inline;
   }
 
   section {
@@ -830,6 +826,16 @@ textarea {
     border-radius: 8px;
     margin-bottom: 12px;
     border: 1px solid #6070ff;
+  }
+
+  .background button:hover {
+    transform: translateY(-10%);
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .background button:active {
+    background-color: #2230d2;
   }
 
   .project_tag button:hover {
