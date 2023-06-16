@@ -1063,3 +1063,11 @@ textarea {
     padding-bottom: 2%;
   }
 }
+@keyframes grow {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
