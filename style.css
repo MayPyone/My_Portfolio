@@ -81,6 +81,21 @@ form ul {
   color: #344563;
 }
 
+h1 {
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 0;
+}
+
+h1:hover {
+  animation-name: grow;
+  animation-duration: 4s;
+}
+
 .taskbar li {
   padding-left: 20px;
 }
@@ -99,16 +114,6 @@ form ul {
 
 .connect_menu li {
   list-style-type: none;
-}
-
-h1 {
-  color: #172b4d;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  margin-bottom: 0;
 }
 
 .intro_one p {
