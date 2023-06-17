@@ -95,6 +95,14 @@ h1:hover {
   animation-name: grow;
   animation-duration: 4s;
 }
+@keyframes grow {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
 
 .taskbar li {
   padding-left: 20px;
@@ -1066,13 +1074,5 @@ textarea {
     justify-content: center;
     margin-top: 2%;
     padding-bottom: 2%;
-  }
-}
-@keyframes grow {
-  0% {
-    font-size: 0;
-  }
-  100% {
-    font-size: 40px;
   }
 }
