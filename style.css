@@ -62,7 +62,7 @@ form ul {
   font-weight: 700px;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+  color: #0f27ff;
   text-decoration: none;
 }
 
@@ -121,7 +121,7 @@ h1 {
 }
 
 .connect {
-  color: #7f8cff;
+  color: #0f27ff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -199,9 +199,18 @@ h1 {
   line-height: 24px;
   letter-spacing: 0 em;
   text-align: left;
-  color: #7a869a;
+  color: #4f5769;
   float: left;
   padding-right: 9%;
+}
+
+.strong {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
 }
 
 .stronger {
@@ -226,7 +235,7 @@ h1 {
   padding: 2% 3%;
   border-radius: 8px;
   border-color: #ebebff;
-  color: #6070ff;
+  color: #001aff;
   float: left;
   list-style-type: none;
   background-color: #ebebff;
@@ -267,7 +276,6 @@ h1 {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  margin-top: 0;
 }
 
 .connect_menu1 li {
@@ -336,7 +344,7 @@ h1 {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #344563;
+  color: #485160;
 }
 
 .aboutme p {
@@ -401,7 +409,7 @@ h4 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #6070ff;
+  color: #142cff;
   background-color: hsl(0, 0%, 100%);
   width: auto;
   margin-right: auto;
@@ -435,7 +443,7 @@ button:active {
 
 .background {
   width: 100%;
-  background-color: #6070ff;
+  background-color: #051eff;
   border-top-left-radius: 11%;
   display: flex;
   margin-top: 10%;
@@ -713,7 +721,7 @@ textarea {
   }
 
   .connect {
-    color: #7f8cff;
+    color: #001aff;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -947,7 +955,6 @@ textarea {
   }
 
   .connect_menu1 {
-    margin-top: 0;
     width: 50;
     height: 20px;
     margin-left: -2px;
