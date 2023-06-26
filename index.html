@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>May Pyone's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
     <section>
-    
-        <header class="taskbar">
-            <a class="logo" href="#"><strong>My Logo</strong></a>
-            
-            <nav class="menu_icon"><img src="images/Union.png" alt="menu icon"/></nav>
-            <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+
+
+            <nav>
+                <a class="logo" href="#"><strong>My Logo</strong></a>
+                <div class="openMenu"><img src="images/Union.png"/></div>
+                <ul class="mainMenu">
+                    <li><a href="#inner1">Portfolio</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#contactform">Contact</a></li>
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+                </ul>
+            </nav>
+
                       
-        </header>
-        <section class="inner1">
+        <section class="inner1" id="inner1">
             <div class="intro_one">
                     <h1>
                          I’m May Pyone.<br>
@@ -348,7 +351,7 @@
 
 </section>
 
-    <section class="aboutme">
+    <section class="aboutme" id="aboutme">
         
         <div class="intro_2">
             <div class="headline">
@@ -387,7 +390,7 @@
                 
             </div>
     </section>
-    <section class="contactform">
+    <section class="contactform" id="contactform">
         <div class="background">
         <article>
             <h2>
@@ -413,5 +416,7 @@
     </section>
 
     </section>
+
+    <script src="portfolio.js"></script>
 </body>
 </html>
