@@ -68,6 +68,10 @@ a {
   display: flex;
 }
 
+.mylist {
+  background-color: yellow;
+}
+
 .upper {
   display: flex;
   justify-content: space-between;
@@ -78,6 +82,7 @@ a {
 
 .noitem {
   list-style: none;
+  background-color: yellow;
 }
 
 .footer {
@@ -87,12 +92,11 @@ a {
 }
 
 .popup {
-  width: 70%;
+  width: 80%;
   background-color: white;
   top: 0 px !important;
   padding: 3%;
   padding-top: 0;
-
 }
 
 .des {
@@ -118,8 +122,8 @@ a {
   position: fixed;
   text-align: center;
   top: 0;
-  background-color: #c1c7d0;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px); /* blur effect to the backdrop */
+  background-color: rgba(141, 133, 133, 0.2);
   max-height: 100vh !important;
   overflow-y: scroll !important;
   padding: 6%;
@@ -1266,15 +1270,15 @@ textarea {
   .des {
     width: 100%;
   }
- 
+
   .live {
     width: 90%;
     font-size: 18px;
     justify-content: space-around;
   }
 
-.bgroup {
-  justify-content: flex-start;
-  padding: 0;
-}
+  .bgroup {
+    justify-content: flex-start;
+    padding: 0;
+  }
 }
