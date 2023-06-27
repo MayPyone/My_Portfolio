@@ -1262,4 +1262,19 @@ textarea {
     width: auto;
     padding: 0;
   }
+
+  .des {
+    width: 100%;
+  }
+ 
+  .live {
+    width: 90%;
+    font-size: 18px;
+    justify-content: space-around;
+  }
+
+.bgroup {
+  justify-content: flex-start;
+  padding: 0;
+}
 }
