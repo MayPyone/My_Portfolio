@@ -1118,4 +1118,15 @@ textarea {
     top: 20px;
     right: 20px;
   }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  .mainMenu li a {
+    font-size: 3rem;
+    color: white;
+    transition: 0.2s ease;
+    font-weight: 500;
+  }
 }
