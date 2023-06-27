@@ -8,12 +8,69 @@
   src: url(font_family/Poppins-Bold.ttf);
 }
 
+.main {
+  height: 100%;
+  width: 100vw;
+  background-color: pink;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  padding-bottom: 60%;
+}
+
 section {
   background-color: #f2f2f2;
 }
 
-.menu_icon {
+.logo {
+  padding-left: 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: "normal";
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #0f27ff;
+  text-decoration: none;
+}
+
+nav {
+  background: white;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+.mainMenu li a {
+  display: flex;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 100%;
+  color: #6070ff;
+  transition: 0.2s ease;
+}
+
+nav .openMenu {
+  font-size: 24px;
+  margin: 20px;
   display: none;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  padding: 10%;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .logo {
+  margin: 3%;
 }
 
 .inner1 {
@@ -55,17 +112,6 @@ form ul {
   background-color: #fff;
 }
 
-.logo {
-  padding-left: 24px;
-  font-family: "Poppins", sans-serif;
-  font-style: "normal";
-  font-weight: 700px;
-  font-size: 18px;
-  line-height: 20px;
-  color: #0f27ff;
-  text-decoration: none;
-}
-
 .taskbar ul {
   display: flex;
   justify-content: space-between;
@@ -79,14 +125,6 @@ form ul {
   letter-spacing: 0 em;
   text-align: center;
   color: #344563;
-}
-
-.taskbar li {
-  padding-left: 20px;
-}
-
-.taskbar a {
-  text-decoration: none;
 }
 
 .connect_menu {
@@ -590,7 +628,7 @@ textarea {
   }
 
   .menu_icon {
-    display: inline;
+    display: block;
     padding-right: 5%;
   }
 
@@ -1068,5 +1106,38 @@ textarea {
     justify-content: center;
     margin-top: 2%;
     padding-bottom: 2%;
+  }
+
+  nav .mainMenu {
+    width: 90%;
+    height: 100%;
+    position: fixed;
+    right: 0 px;
+    left: 0 px;
+    z-index: 80;
+    flex-direction: column;
+    transition: top 1s ease 0s;
+    display: none;
+    background-color: hsla(234, 100%, 69%, 0.934);
+    backdrop-filter: blur(3px);
+    margin-top: 0;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  .mainMenu li a {
+    font-size: 3rem;
+    color: white;
+    transition: 0.2s ease;
+    font-weight: 500;
   }
 }
