@@ -8,14 +8,124 @@
   src: url(font_family/Poppins-Bold.ttf);
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.close {
+  height: 50%;
+  width: 5%;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.see-live {
+  display: flex;
+  padding: 2%;
+  align-items: center;
+  width: 50%;
+}
+
+.live {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 10%;
+  border-color: #001afff5;
+  border-radius: 8px;
+  width: 160px;
+  color: #001aff;
+  font-size: 15px;
+}
+
+.mycard img {
+  width: 98%;
+  height: auto;
+  padding-top: 2%;
+  align-items: center;
+  display: flex;
+}
+
+#mytech {
+  width: 80%;
+  display: block;
+}
+
+.last-foot {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  width: 40%;
+}
+
+.bgroup {
+  width: 100%;
+  display: flex;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  height: 7%;
+}
+
+.noitem {
+  list-style: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5% 0%;
+}
+
+.popup {
+  width: 70%;
+  background-color: white;
+  top: 0 px !important;
+  padding: 3%;
+  padding-top: 0;
+
+}
+
+.des {
+  text-align: left;
+  width: 60%;
+  font-size: 18px;
+}
+
+.closebtn {
+  background-color: white;
+  border-color: white;
+}
+
+#head {
+  text-align: left;
+  display: block;
+  width: 50%;
+}
+
 .main {
-  height: 100%;
-  width: 100vw;
-  background-color: pink;
+  height: auto;
+  width: 100%;
   position: fixed;
   text-align: center;
   top: 0;
-  padding-bottom: 60%;
+  background-color: #c1c7d0;
+  backdrop-filter: blur(3px);
+  max-height: 100vh !important;
+  overflow-y: scroll !important;
+  padding: 6%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section {
@@ -1139,5 +1249,17 @@ textarea {
     color: white;
     transition: 0.2s ease;
     font-weight: 500;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .last-foot {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    width: auto;
+    padding: 0;
   }
 }
