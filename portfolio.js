@@ -12,7 +12,7 @@ function show() {
 function close() {
   mainmenu.style.top = '-180%';
   mainmenu.style.display = 'flex';
-  mainmenu.style.paddingTop = '0px';
+  mainmenu.style.paddingTop = '2px';
 }
 
 openmenu.addEventListener('click', show);
