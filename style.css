@@ -12,6 +12,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+#error {
+  text-align: center;
+  color: red;
+  padding: 2% 2%;
+}
+
 .close {
   height: 50%;
   width: 5%;
@@ -1280,5 +1286,9 @@ textarea {
   .bgroup {
     justify-content: flex-start;
     padding: 0;
+  }
+
+  #error {
+    text-align: start;
   }
 }

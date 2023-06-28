@@ -121,7 +121,8 @@
           </ul>
         </div>
 
-        <div class="project_tag"><button class="see-more2">See project</button></div>
+        
+        <div class="project_tag"><button>See project</button></div>
        
     </div>
 </div>
@@ -158,7 +159,7 @@
         </div>
 
         
-        <div class="project_tag"><button class="see-more3">See project</button></div>
+        <div class="project_tag"><button>See project</button></div>
        
     </div>
 </div>
@@ -197,7 +198,7 @@
             </ul>
           </div>
   
-        <div class="project_tag"><button class="see-more4">See project</button></div>
+        <div class="project_tag"><button>See project</button></div>
        
     </div>
 </div>
@@ -272,7 +273,7 @@
             </ul>
           </div>
   
-        <div class="project_tag"><button class="see-more2">See project</button></div>
+        <div class="project_tag"><button class="see-more">See project</button></div>
  </div>
  <article class="item_img">
     <img src="images/two.png" alt="worksection"/>
@@ -311,7 +312,7 @@
             </ul>
           </div>
   
-        <div class="project_tag"><button class="see-more3">See project</button></div>
+        <div class="project_tag"><button class="see-more">See project</button></div>
  </div>
 </section>
 
@@ -343,7 +344,7 @@
             </ul>
           </div>
   
-        <div class="project_tag"><button class="see-more4">See project</button></div>
+        <div class="project_tag"><button class="see-more">See project</button></div>
  </div>
  <article class="item_img">
     <img src="images/four.png" alt="worksection"/>
@@ -403,14 +404,16 @@
                 If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
     I’d love to help with it!
             </p>
-            <form
+            <form id="form"
             action="https://formspree.io/f/xbjenlov"
             method="POST">
                 <ul>
-                    <li><input type="text" class="collection" name="name" maxlength="30" placeholder="Enter your name" required></li>
-                     <li> <input type="text" class="collection" name="email" placeholder="Enter your email" required></li>
+                    <li><input type="text" id="name" class="collection" name="name" maxlength="30" placeholder="Enter your name" required></li>
+                     <li> <input type="email" id="email" class="collection" name="email" placeholder="Enter your email" required>
+                     </li>
                       <li> <textarea maxlength="500" id="msg" name="user_message"  placeholder="Write your message here..." required></textarea></li>
-                       <li><button type="submit" class="collection">Get in touch</button></li>         
+                      <li id="error"></li>
+                       <li><button type="submit" id='submit' class="collection">Get in touch</button></li>         
                </ul>
             </form>
             <div class="homeimage"><img src="images/Shape.png" alt="background"/></div>

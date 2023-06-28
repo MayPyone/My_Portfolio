@@ -140,3 +140,19 @@ open4.forEach((item) => {
     myfun(3);
   });
 });
+
+const email = document.getElementById('email');
+const form = document.getElementById('form');
+const errorElement = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  const messages = [];
+  if (email.value !== email.value.toLowerCase()) {
+    messages.push(' ! email should be lowercase');
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault();
+    errorElement.innerText = messages.join(', ');
+  }
+});
