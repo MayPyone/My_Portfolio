@@ -24,52 +24,54 @@ menuitems.forEach((item) => {
   });
 });
 
-const p1 = {
-  hname: 'Tonic',
-  pname: [' ', 'Canopy', 'Full Stack Dev', '2015'],
-  img: "<img id='card-image' src='images/one.png' alt=''/>",
-  description: 'daily selection of privately personalized reads; no accounts or sign-ups required.'
- + 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.'
- + 'Odit exercitationem quidem eius illum',
-  tech: [' ', 'html', 'Ruby on rails', 'css', 'javaScript'],
-  link: '#',
-  psource: '#',
-};
-const p2 = {
-  hname: 'Multi-Post Stories',
-  pname: [' ', 'Canopy', 'Full Stack Dev', '2015'],
-  img: "<img id='card-image' src='images/two.png' alt=''/>",
-  description: 'daily selection of privately personalized reads; no accounts or sign-ups required.'
- + 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-  + 'Odit exercitationem quidem eius illum',
-  tech: [' ', 'html', 'Ruby on rails', 'css', 'javaScript'],
-  link: '#',
-  psource: '#',
-};
+const arr = [
+  {
+    hname: 'Tonic',
+    pname: [' ', 'Canopy', 'Full Stack Dev', '2015'],
+    img: "<img id='card-image' src='images/one.png' alt=''/>",
+    description: 'daily selection of privately personalized reads; no accounts or sign-ups required.'
+   + 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+   + 'Odit exercitationem quidem eius illum',
+    tech: [' ', 'html', 'Ruby on rails', 'css', 'javaScript'],
+    link: '#',
+    psource: '#',
+  },
+  {
+    hname: 'Multi-Post Stories',
+    pname: [' ', 'Canopy', 'Full Stack Dev', '2015'],
+    img: "<img id='card-image' src='images/two.png' alt=''/>",
+    description: 'daily selection of privately personalized reads; no accounts or sign-ups required.'
+   + 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+    + 'Odit exercitationem quidem eius illum',
+    tech: [' ', 'html', 'Ruby on rails', 'css', 'javaScript'],
+    link: '#',
+    psource: '#',
+  },
 
-const p3 = {
-  hname: 'Facebook 360',
-  pname: [' ', 'Facebook', 'Full Stack Dev', '2015'],
-  img: "<img id='card-image' src='images/three.png' alt=''/>",
-  description: 'daily selection of privately personalized reads; no accounts or sign-ups required.'
+  {
+    hname: 'Facebook 360',
+    pname: [' ', 'Facebook', 'Full Stack Dev', '2015'],
+    img: "<img id='card-image' src='images/three.png' alt=''/>",
+    description: 'daily selection of privately personalized reads; no accounts or sign-ups required.'
   + 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.'
   + 'Odit exercitationem quidem eius illum',
-  tech: [' ', 'html', 'Ruby on rails', 'css', 'javaScript'],
-  link: '#',
-  psource: '#',
-};
-const p4 = {
-  hname: 'Uber Navigation',
-  pname: [' ', 'Multiposts', 'Full Stack Dev', '2015'],
-  img: "<img id='card-image' src='images/four.png' alt=''/>",
-  description: 'daily selection of privately personalized reads; no accounts or sign-ups required.'
+    tech: [' ', 'html', 'Ruby on rails', 'css', 'javaScript'],
+    link: '#',
+    psource: '#',
+  },
+
+  {
+    hname: 'Uber Navigation',
+    pname: [' ', 'Multiposts', 'Full Stack Dev', '2015'],
+    img: "<img id='card-image' src='images/four.png' alt=''/>",
+    description: 'daily selection of privately personalized reads; no accounts or sign-ups required.'
  + 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.'
   + 'Odit exercitationem quidem eius illum',
-
-  tech: [' ', 'html', 'Ruby on rails', 'css', 'javaScript'],
-  link: '#',
-  psource: '#',
-};
+    tech: [' ', 'html', 'Ruby on rails', 'css', 'javaScript'],
+    link: '#',
+    psource: '#',
+  },
+];
 
 const body = document.querySelector('body');
 const open = document.querySelectorAll('.see-more');
@@ -93,7 +95,6 @@ function openfunction() {
   + "<div class='bgroup'>"
   + "<a class='see-live id='link' href='#'><button type='button' class='live '>See live<img src='images/live.svg' alt=''></button></a>"
   + "<a class='see-live' id='res' href='#'><button type='button' class='live'>See source<img src='images/git.png' alt=''></button></a></div></div></div>";
-  // popup.append(list);
   main.append(popup);
   body.append(main);
 
@@ -103,89 +104,39 @@ function openfunction() {
   });
 }
 
-function pe1() {
+function myfun(position) {
   openfunction();
-  document.getElementById('head').innerHTML = p1.hname;
-  // pnamelist
-  const list = p1.pname.join('</li class="noitem"><li>');
+  document.getElementById('head').innerHTML = arr[position].hname;
+  const list = arr[position].pname.join('</li><li>');
   document.getElementById('mylist').innerHTML = list;
-  const techlist = p1.tech.join('</li><li>');
+  const techlist = arr[position].tech.join('</li><li>');
   document.getElementById('mytech').innerHTML = techlist;
-  // imagelist
-  document.querySelector('.mycard').innerHTML = p1.img;
-
-  document.querySelector('.des').innerHTML = p1.description;
-  document.querySelector('.res').querySelector.setAttribute('href', p1.psource);
-  document.querySelector('.link').querySelector.setAttribute('href', p1.link);
-}
-
-function pe2() {
-  openfunction();
-  document.getElementById('head').innerHTML = p1.hname;
-  // pnamelist
-  const list = p2.pname.join('</li class="noitem"><li>');
-  document.getElementById('mylist').innerHTML = list;
-  const techlist = p2.tech.join('</li><li>');
-  document.getElementById('mytech').innerHTML = techlist;
-  // imagelist
-  document.querySelector('.mycard').innerHTML = p2.img;
-  document.querySelector('.des').innerHTML = p2.description;
-  document.querySelector('.res').querySelector.setAttribute('href', p2.psource);
-  document.querySelector('.link').querySelector.setAttribute('href', p2.link);
-}
-
-function pe3() {
-  openfunction();
-  document.getElementById('head').innerHTML = p1.hname;
-  // pnamelist
-  // let list = "<li class='noitem'>" + p3.pname.join('</li><li>') + '</li>';
-  const list = p3.pname.join('</li><li>');
-  document.getElementById('mylist').innerHTML = list;
-  const techlist = p3.tech.join('</li><li>');
-  document.getElementById('mytech').innerHTML = techlist;
-  // imagelist
-  document.querySelector('.mycard').innerHTML = p3.img;
-  document.querySelector('.des').innerHTML = p3.description;
-  document.querySelector('.res').querySelector.setAttribute('href', p3.psource);
-  document.querySelector('.link').querySelector.setAttribute('href', p3.link);
-}
-
-function pe4() {
-  openfunction();
-  document.getElementById('head').innerHTML = p4.hname;
-
-  // pnamelist
-  const list = p4.pname.join('</li><li>');
-  document.getElementById('mylist').innerHTML = list;
-  const techlist = p4.tech.join('</li><li>');
-  document.getElementById('mytech').innerHTML = techlist;
-  // imagelist
-  document.querySelector('.mycard').innerHTML = p4.img;
-  document.querySelector('.des').innerHTML = p4.description;
-  document.querySelector('.res').querySelector.setAttribute('href', p4.psource);
-  document.querySelector('.link').querySelector.setAttribute('href', p4.link);
+  document.querySelector('.mycard').innerHTML = arr[position].img;
+  document.querySelector('.des').innerHTML = arr[position].description;
+  document.querySelector('.res').querySelector.setAttribute('href', arr[position].psource);
+  document.querySelector('.link').querySelector.setAttribute('href', arr[position].link);
 }
 
 open.forEach((item) => {
   item.addEventListener('click', () => {
-    pe1();
+    myfun(0);
   });
 });
 
 open2.forEach((item) => {
   item.addEventListener('click', () => {
-    pe2();
+    myfun(1);
   });
 });
 
 open3.forEach((item) => {
   item.addEventListener('click', () => {
-    pe3();
+    myfun(2);
   });
 });
 
 open4.forEach((item) => {
   item.addEventListener('click', () => {
-    pe4();
+    myfun(3);
   });
 });
