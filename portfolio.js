@@ -23,3 +23,16 @@ menuitems.forEach((item) => {
     close();
   });
 });
+
+const mail = document.getElementById('email');
+
+const submit =document.getElementById('submit');
+submit.addEventListener('click',() => {
+   
+})
+
+function islower(myemail) {
+  if( myemail.value != myemail.value.toLowerCase()) {
+    //mail.push("Your email address should be lowercase");
+  }
+}
